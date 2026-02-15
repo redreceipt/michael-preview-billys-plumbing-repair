@@ -8,8 +8,10 @@
   --line:rgba(8,20,18,.12);
   --shadow:0 18px 40px rgba(2,10,10,.16);
 
-  --accent:#ee4036;
-  --accent2:#ffcf6a;
+  /* Match Billy's current site palette */
+  --accent:#ee4036; /* rgb(238, 64, 54) */
+  --accent2:#0c4d8b; /* rgb(12, 77, 139) */
+  --accent3:#ffd50e; /* rgb(255, 213, 14) */
   --accent-ink:#1a1200;
 
   --max-width:1120px;
@@ -22,9 +24,10 @@ body{
   margin:0;
   color:var(--ink);
   line-height:1.5;
-  background:radial-gradient(1100px 700px at 16% -10%, rgba(255,207,106,.26), transparent 55%),
-             radial-gradient(1200px 800px at 92% 10%, rgba(229,27,35,.12), transparent 58%),
-             linear-gradient(180deg, #f7fbfa 0%, #ffffff 36%, #ffffff 100%);
+  background:radial-gradient(1200px 760px at 14% -10%, rgba(255,213,14,.22), transparent 56%),
+             radial-gradient(1200px 820px at 90% 10%, rgba(12,77,139,.12), transparent 58%),
+             radial-gradient(1000px 680px at 88% 82%, rgba(238,64,54,.10), transparent 60%),
+             linear-gradient(180deg, #f7fbff 0%, #ffffff 40%, #ffffff 100%);
   font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, Helvetica, sans-serif;
 }
 
@@ -111,7 +114,7 @@ img{max-width:100%;display:block}
 .btn.small{padding:.55rem .85rem;font-weight:800}
 
 .primary{
-  background:linear-gradient(180deg, #ff3a42 0%, var(--accent) 70%);
+  background:linear-gradient(180deg, #ff5a61 0%, var(--accent) 70%);
   color:#fff;
   box-shadow:0 14px 26px rgba(229,27,35,.22);
 }
@@ -138,7 +141,7 @@ img{max-width:100%;display:block}
 .hero{
   position:relative;
   overflow:hidden;
-  background:linear-gradient(180deg, rgba(7,27,27,.92) 0%, rgba(11,47,42,.94) 52%, rgba(11,47,42,.88) 100%);
+  background:linear-gradient(180deg, rgba(10,23,36,.94) 0%, rgba(15,30,45,.96) 52%, rgba(15,30,45,.90) 100%);
   color:#fff;
 }
 .hero .outline{border-color:rgba(255,255,255,.68);color:#fff}
@@ -156,8 +159,8 @@ img{max-width:100%;display:block}
   inset:-140px -120px auto auto;
   width:520px;
   height:520px;
-  background:radial-gradient(circle at 30% 25%, rgba(255,207,106,.38), transparent 55%),
-             radial-gradient(circle at 70% 70%, rgba(229,27,35,.24), transparent 62%);
+  background:radial-gradient(circle at 30% 25%, rgba(255,213,14,.34), transparent 55%),
+             radial-gradient(circle at 72% 68%, rgba(12,77,139,.28), transparent 62%);
   filter:blur(2px);
   transform:rotate(14deg);
   z-index:1;
@@ -177,8 +180,8 @@ img{max-width:100%;display:block}
 .kicker::before{
   content:"";
   width:12px;height:12px;border-radius:4px;
-  background:linear-gradient(180deg, var(--accent2), #ffb43f);
-  box-shadow:0 10px 18px rgba(255,207,106,.18);
+  background:linear-gradient(180deg, var(--accent3), rgba(255,213,14,.72));
+  box-shadow:0 10px 18px rgba(255,213,14,.18);
 }
 .hero h1{font-size:clamp(2.0rem, 3.2vw, 3.0rem)}
 .sub{
@@ -469,7 +472,7 @@ details.owner .owner-card{
 }
 .mbtn.primary{
   border-color:transparent;
-  background:linear-gradient(180deg, #ff3a42 0%, var(--accent) 70%);
+  background:linear-gradient(180deg, #ff5a61 0%, var(--accent) 70%);
   color:#fff;
   box-shadow:0 14px 26px rgba(229,27,35,.18);
 }
